@@ -1,10 +1,12 @@
-spring:
-  application:
-    name: zuul
-    
-server:
-  port: 3001
-  
+spring: 
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-server
+      name: zuul
+      profile: dev
+      
 eureka:
   client:
     service-url:
