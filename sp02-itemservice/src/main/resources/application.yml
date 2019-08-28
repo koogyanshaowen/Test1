@@ -1,11 +1,8 @@
-spring: 
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: config-server
-      name: item-service
-      profile: dev
+spring:
+  application:
+    name: item-service
+server:
+  port: 8001
   
 eureka:
   client:

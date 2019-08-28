@@ -1,12 +1,11 @@
-spring: 
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: config-server
-      name: order-service
-      profile: dev
-      
+spring:
+  application:
+    name: order-service
+    
+# server:
+#  port: 8201
+  
+  
 eureka:
   client:
     service-url:
